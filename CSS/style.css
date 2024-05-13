@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*header {
+    border: solid 1px violet;
+}
+h1 {
+    border: solid 1px blue;
+}
+#page-content {
+    border: solid 1px orange;
+}
+#game {
+    border: solid 1px red;
+}
+#searched_word_text {
+    text-align: center;
+}
+#searched_word {
+    text-align: center;
+    border: solid 1px green;
+}
+#entered_word {
+    border: solid 1px orange;
+}
+#result {
+    border: solid 1px yellow;
+}
+#submit {
+    border: solid 1px violet;
+    padding: 0.5em;
+}*/
+
+header {
+    border: solid 1px violet;
+    text-align: center;
+    padding: 0.5em;
+}
+h1 {
+    border: solid 1px blue;
+}
+#page-content {
+    border: solid 1px orange;
+}
+#game {
+    border: solid 1px red;
+    max-width: 500px;
+}
+#searched_word_text {
+    text-align: center;
+    padding: 0.5em;
+}
+#searched_word {
+    text-align: center;
+    border: solid 1px green;
+    padding: 0.5em;
+}
+#cont_entered_word {
+    display: flex;
+    flex-direction: row;
+}
+#entered_word {
+    border: solid 1px orange;
+    padding: 0.5em;
+    width: 90%;
+}
+#result {
+    border: solid 1px yellow;
+    padding: 0.5em;
+}
+#submit {
+    border: solid 1px violet;
+    padding: 0.5em;
+    width: 10%;
+}
+#character-map {
+    padding: 0.5em;
+}
