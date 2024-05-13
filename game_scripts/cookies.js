@@ -45,12 +45,10 @@ function setCookie(name, value, days) {
   function setInputLanguage() {
     inputLanguage = document.getElementById("inputLanguage").value;
     setCookie("selected_inputLanguage", inputLanguage, 1);
-    alert(inputLanguage);
   }
 
   function setDisplayLanguage() {
     displayLanguage = document.getElementById("displayLanguage").value;
-    alert(displayLanguage);
     setCookie("selected_displayLanguage", displayLanguage, 1);
   }
 

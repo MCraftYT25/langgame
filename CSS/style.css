@@ -1,18 +1,36 @@
 :root {
     --interface-color: #0A0B0D;
     --interface-text-color: rgb(253,217,141);
-    --font-normal: 'Ubuntu';
+    --font-normal: 'Apple';
     --font-bold: 'Apple-semi-bold';
 }
 * {
     margin: 0;
     padding: 0;
+    font-weight: normal;
 }
 /*————————————————————————————————————————|Fonts|————————————————————*/
 @font-face {
     font-family: 'Ubuntu';
     src: url('../files/fonts/Ubuntu-Regular.ttf');
 }
+@font-face {
+    font-family: 'Apple';
+    src: url('../files/fonts/sfui/SFUIText-Regular.otf');
+}
+@font-face {
+    font-family: 'Apple-bold';
+    src: url('../files/fonts/sfui/SFUIText-Bold.otf');
+}
+@font-face {
+    font-family: 'Apple-heavy';
+    src: url('../files/fonts/sfui/SFUIText-Heavy.otf');
+}
+@font-face {
+    font-family: 'Apple-semi-bold';
+    src: url('../files/fonts/sfui/SFUIText-Semibold.otf');
+}
+
 /*————————————————————————————————————————|Header|————————————————————*/
 /*header {
     border: solid 1px violet;
@@ -53,7 +71,7 @@ header {
     color: var(--interface-text-color);
 }
 h1 {
-    font-family: var(--font-normal);
+    font-family: var(--font-bold);
 }
 #page-content {
     padding-left: 0.5em;
@@ -70,6 +88,7 @@ h1 {
     text-align: center;
     padding: 0.5em;
     border-radius: 0.2em;
+    font-family: var(--font-bold);
 }
 #searched_word {
     text-align: center;
@@ -101,6 +120,7 @@ h1 {
     color: var(--interface-text-color);
     border-top-right-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
+    font-family: var(--font-bold);
 }
 /*————————————————————————————————————————|symbols|————————————————————*/
 .symbols {
@@ -116,19 +136,20 @@ h1 {
 #character-map {
     padding: 0.5em;
     text-align: center;
+    font-family: var(--font-bold);
 }
 /*————————————————————————————————————————||————————————————————*/
 .correct {
     color: green;
-    font-weight: bold;
+    font-family: var(--font-bold);
 }
 .incorrect {
     color: red;
-    font-weight: bold;
+    font-family: var(--font-bold);
 }
 .original {
     color: gray;
-    font-weight: bold;
+    font-family: var(--font-bold);
 }
 
 #lang-settings {
@@ -141,10 +162,10 @@ h1 {
 #lang-settings select {
     background-color: var(--interface-color);
     color: var(--interface-text-color);
-    font-family: var(--font-normal);
     font-size: 1em;
     border-radius: 0.2em;
     padding: 0.5em;
+    font-family: var(--font-bold);
 
 }
 .button {
@@ -152,4 +173,6 @@ h1 {
     color: var(--interface-text-color);
     padding: 0.5em;
     font-size: 1em;
+    font-family: var(--font-bold);
+    
 }
