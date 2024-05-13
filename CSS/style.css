@@ -1,7 +1,19 @@
+:root {
+    --interface-color: #0A0B0D;
+    --interface-text-color: rgb(253,217,141);
+    --font-normal: 'Ubuntu';
+    --font-bold: 'Apple-semi-bold';
+}
 * {
     margin: 0;
     padding: 0;
 }
+/*————————————————————————————————————————|Fonts|————————————————————*/
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../files/fonts/Ubuntu-Regular.ttf');
+}
+/*————————————————————————————————————————|Header|————————————————————*/
 /*header {
     border: solid 1px violet;
 }
@@ -31,49 +43,90 @@ h1 {
     border: solid 1px violet;
     padding: 0.5em;
 }*/
-
+body {
+    font-family: var(--font-normal);
+}
 header {
-    border: solid 1px violet;
     text-align: center;
     padding: 0.5em;
+    background-color: var(--interface-color);
+    color: var(--interface-text-color);
 }
 h1 {
-    border: solid 1px blue;
+    font-family: var(--font-normal);
 }
 #page-content {
-    border: solid 1px orange;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 #game {
-    border: solid 1px red;
     max-width: 500px;
+    margin-top: 0.5em;
 }
 #searched_word_text {
+    background-color: var(--interface-color);
+    color: var(--interface-text-color);
+    font-weight: bold;
     text-align: center;
     padding: 0.5em;
+    border-radius: 0.2em;
 }
 #searched_word {
     text-align: center;
-    border: solid 1px green;
     padding: 0.5em;
+    font-weight: bold;
 }
 #cont_entered_word {
     display: flex;
     flex-direction: row;
 }
 #entered_word {
-    border: solid 1px orange;
     padding: 0.5em;
     width: 90%;
+    font-size: 1.5em;
+    border: none;
+    border-bottom: solid 1px black;
 }
+#entered_word:focus {
+    outline: none;
+}
+
 #result {
-    border: solid 1px yellow;
     padding: 0.5em;
 }
 #submit {
-    border: solid 1px violet;
     padding: 0.5em;
     width: 10%;
+    background-color: var(--interface-color);
+    color: var(--interface-text-color);
+    border-top-right-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
 }
+/*————————————————————————————————————————|symbols|————————————————————*/
+.symbols {
+    background-color: var(--interface-color);
+    color: var(--interface-text-color);
+    padding: 0.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    border-radius: 0.2em;
+    user-select: none;
+}
+
 #character-map {
     padding: 0.5em;
+    text-align: center;
+}
+/*————————————————————————————————————————||————————————————————*/
+.correct {
+    color: green;
+    font-weight: bold;
+}
+.incorrect {
+    color: red;
+    font-weight: bold;
+}
+.original {
+    color: gray;
+    font-weight: bold;
 }
