@@ -96,9 +96,45 @@ const words = [
   let results = []; // tablica wyników
   let usedWords = []; // tablica użytych słów
   
-  let displayLanguage = "italian"; // język wyświetlany
-  let inputLanguage = "german"; // język wprowadzany przez użytkownika
-  
+  //let displayLanguage = "italian"; // język wyświetlany
+  //let inputLanguage = "german"; // język wprowadzany przez użytkownika
+  /*let selectedLanguages = getSelectedLanguages(); // Pobieramy wybrane języki z plików cookie
+
+    let displayLanguage = selectedLanguages.displayLanguage || "english"; // język wyświetlany
+    let inputLanguage = selectedLanguages.inputLanguage || "polish"; // język wprowadzany przez użytkownika*/
+    /*function getSelectedLanguages() {
+        //const inputLanguage = getCookie("selected_inputLanguage");
+        //const displayLanguage = getCookie("selected_displayLanguage");
+        const inputLanguage = "polish";
+        const displayLanguage = "english";
+        return {
+          inputLanguage: inputLanguage,
+          displayLanguage: displayLanguage
+        };
+      }
+*/
+    /*let inputLanguage = "italian";
+    let displayLanguage = "english";*/
+    function f1()
+    {
+        if(getCookie("selected_displayLanguage")) {
+            return getCookie("selected_displayLanguage");
+        } else {
+            return "english";
+        }
+    }
+    function f2()
+    {
+        if(getCookie("selected_inputLanguage")) {
+            return getCookie("selected_inputLanguage");
+        } else {
+            return "italian";
+        }
+    }
+
+    let displayLanguage = f1();
+    let inputLanguage = f2();
+
   function getRandomWord() {
     let word;
     do {
@@ -207,5 +243,6 @@ const words = [
 
   window.onload = function() {
     document.getElementById("entered_word").focus();
-    window.onload = startGame();
+    startGame();
+
   };
