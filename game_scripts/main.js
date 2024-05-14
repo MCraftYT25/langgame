@@ -95,7 +95,7 @@ var words = [
     d2: colors,
   }
 
-  let totalWords = 5; // liczba słów do wyświetlenia
+  let totalWords = 10; // liczba słów do wyświetlenia
   let wordCount = 0; // licznik słów
   let results = []; // tablica wyników
   let usedWords = []; // tablica użytych słów
@@ -153,11 +153,19 @@ var words = [
           words = dictionaries[getCookie("selected_dictionary")];
         } 
     }
-
+    function getGui()
+    {
+      if(getCookie("selectedGui"))
+        {
+          change_gui();
+        }
+    }
     let displayLanguage = f1();
     let inputLanguage = f2();
 
     getDictionary();
+
+    getGui();
 
     //alert(words);
 

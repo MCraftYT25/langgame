@@ -163,10 +163,12 @@ h1 {
     background-color: var(--interface-color);
     color: var(--interface-text-color);
     font-size: 1em;
-    border-radius: 0.2em;
     padding: 0.5em;
     font-family: var(--font-bold);
-
+    border: none;
+}
+#lang-settings select:focus {
+    border: none;
 }
 .button {
     background-color: var(--interface-color);
@@ -174,5 +176,57 @@ h1 {
     padding: 0.5em;
     font-size: 1em;
     font-family: var(--font-bold);
-    border-radius: 0.2em;
+    border: none;
+}
+
+
+
+
+
+
+
+/*————————————————————————————————————————||————————————————————*/
+/*————————————————————————————————————————||————————————————————*/
+/*————————————————————————————————————————||————————————————————*/
+/*————————————————————————————————————————||————————————————————*/
+/*————————————————————————————————————————||————————————————————*/
+/*————————————————————————————————————————||————————————————————*/
+/*————————————————————————————————————————||————————————————————*/
+/*————————————————————————————————————————||————————————————————*/
+/*————————————————————————————————————————||————————————————————*/
+/*————————————————————————————————————————||————————————————————*/
+/*————————————————————————————————————————||————————————————————*/
+@media screen and (min-width: 200px) {
+    #mobile-widgets {
+        visibility: visible;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+        border-top-left-radius: 1vw;
+        border-top-right-radius: 1vw;
+        background-color: var(--interface-color);
+        color: var(--interface-text-color);
+    }
+    #mobile-widgets a {
+        background-color: var(--interface-color);
+        color: var(--interface-text-color);
+        padding: 0.5em;
+        text-decoration: none;
+        font-family: 'Apple-bold';
+    }
+    #refresh {
+        visibility: hidden;
+        position: fixed;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #mobile-widgets {
+        visibility: hidden;
+    }
+    #refresh {
+        visibility: visible;
+        position: relative;
+    }
 }

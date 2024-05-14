@@ -45,6 +45,7 @@ function setCookie(name, value, days) {
   function setInputLanguage() {
     inputLanguage = document.getElementById("inputLanguage").value;
     setCookie("selected_inputLanguage", inputLanguage, 1);
+    setCookie("selectedGui", inputLanguage, 1);
   }
 
   function setDisplayLanguage() {
@@ -52,14 +53,13 @@ function setCookie(name, value, days) {
     setCookie("selected_displayLanguage", displayLanguage, 1);
   }
 
-  function setSelectedGui(selectedGui) {
+  /*function setSelectedGui(selectedGui) {
     setCookie("selectedGui", selectedGui, 1);
-  }
+  }*/
 
   function setDictionary() {
     var selectElement = document.getElementById("dictionary");
     var selectedValue = selectElement.value;
 
     setCookie("selected_dictionary", selectedValue, 1);
-    alert(getCookie("selected_dictionary"));
 }
