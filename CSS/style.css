@@ -32,38 +32,10 @@
 }
 
 /*————————————————————————————————————————|Header|————————————————————*/
-/*header {
-    border: solid 1px violet;
-}
-h1 {
-    border: solid 1px blue;
-}
-#page-content {
-    border: solid 1px orange;
-}
-#game {
-    border: solid 1px red;
-}
-#searched_word_text {
-    text-align: center;
-}
-#searched_word {
-    text-align: center;
-    border: solid 1px green;
-}
-#entered_word {
-    border: solid 1px orange;
-}
-#result {
-    border: solid 1px yellow;
-}
-#submit {
-    border: solid 1px violet;
-    padding: 0.5em;
-}*/
 body {
     font-family: var(--font-normal);
 }
+/*————————————————————————————————————————||————————————————————*/
 header {
     text-align: center;
     padding: 0.5em;
@@ -73,10 +45,12 @@ header {
 h1 {
     font-family: var(--font-bold);
 }
+/*————————————————————————————————————————||————————————————————*/
 #page-content {
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
+/*————————————————————————————————————————||————————————————————*/
 #game {
     max-width: 500px;
     margin-top: 0.5em;
@@ -109,7 +83,6 @@ h1 {
 #entered_word:focus {
     outline: none;
 }
-
 #result {
     padding: 0.5em;
     text-align: center;
@@ -133,7 +106,6 @@ h1 {
     border-radius: 0.2em;
     user-select: none;
 }
-
 #character-map {
     padding: 0.5em;
     text-align: center;
@@ -152,7 +124,7 @@ h1 {
     color: gray;
     font-family: var(--font-bold);
 }
-
+/*————————————————————————————————————————||————————————————————*/
 #lang-settings {
     margin-top: 0.5em;
     display: flex;
@@ -179,8 +151,7 @@ h1 {
     font-family: var(--font-bold);
     border: none;
 }
-
-
+/*————————————————————————————————————————||————————————————————*/
 #search-box {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -198,8 +169,14 @@ h1 {
 #dictionary-list .word-cont .translate {
     color: grey;
 }
-
-
+/*————————————————————————————————————————||————————————————————*/
+#searchelement {
+    padding: 0.5em;
+    font-size: 1em;
+    border: none;
+    margin-top: 0.5em;
+    border-bottom: solid 1px black;
+}
 /*————————————————————————————————————————||————————————————————*/
 /*————————————————————————————————————————||————————————————————*/
 /*————————————————————————————————————————||————————————————————*/

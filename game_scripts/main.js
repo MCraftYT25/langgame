@@ -93,6 +93,7 @@ var words = [
   var dictionaries = {
     d1: words,
     d2: colors,
+    d3: time,
   }
 
   let totalWords = 10; // liczba słów do wyświetlenia
