@@ -6,6 +6,7 @@ function change_gui()
         switch(selectedGui)
         {
             case "italian":
+                document.getElementById("searched_word_text").innerHTML = "Scrivi una traduzione:";
                 document.getElementsByClassName("symbols")[0].innerHTML = "à";
                 document.getElementsByClassName("symbols")[1].innerHTML = "è";
                 document.getElementsByClassName("symbols")[2].innerHTML = "ì";
@@ -15,6 +16,7 @@ function change_gui()
                 document.getElementsByClassName("symbols")[6].innerHTML = "?";
                 break;
             case "german":
+                document.getElementById("searched_word_text").innerHTML = "Schreiben Sie eine Übersetzung:";
                 document.getElementsByClassName("symbols")[0].innerHTML = "ä";
                 document.getElementsByClassName("symbols")[1].innerHTML = "Ä";
                 document.getElementsByClassName("symbols")[2].innerHTML = "ö";
@@ -24,6 +26,7 @@ function change_gui()
                 document.getElementsByClassName("symbols")[6].innerHTML = "ß";
                 break;
             case "english":
+                document.getElementById("searched_word_text").innerHTML = "Write the translation:";
                 document.getElementsByClassName("symbols")[0].innerHTML = "à";
         document.getElementsByClassName("symbols")[1].innerHTML = "è";
         document.getElementsByClassName("symbols")[2].innerHTML = "ì";
@@ -33,6 +36,7 @@ function change_gui()
         document.getElementsByClassName("symbols")[6].innerHTML = "?";
                 break;
                 case "polish":
+                    document.getElementById("searched_word_text").innerHTML = "Napisz tłumaczenie:";
                     document.getElementsByClassName("symbols")[0].innerHTML = "ą";
                     document.getElementsByClassName("symbols")[1].innerHTML = "ć";
             document.getElementsByClassName("symbols")[2].innerHTML = "ę";

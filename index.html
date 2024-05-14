@@ -47,7 +47,7 @@
             <input id="refresh" type="button" value="Refresh" onClick="location.reload();" />
         </div>--> 
         <div id="game">
-            <p id="searched_word_text">Write</p>
+            <p id="searched_word_text">Write the translation:</p>
             <p id="searched_word"></p>
             <div id="cont_entered_word">
                 <input type="text" id="entered_word" placeholder="" autocomplete="off" inputmode="text">
@@ -64,6 +64,18 @@
                 <span class="symbols">?</span>
             </p>
         </div>
+        <!--
+        <div id="dictionary-list">
+            <p class="word-cont">
+                <span class="word"></span>
+                <span class="pause">-</span>
+                <span class="translate"></span>
+            </p>
+        </div>-->
+        <div id="search-box">
+            <h2>Dictionary</h2>
+        </div>
+        <div id="dictionary-list"></div>
     </div>
     <div id="mobile-widgets">
         <a id="gomenu" onclick="move(2);">Refresh</a>
@@ -72,6 +84,7 @@
     </div>
 </body>
 </html>
+<script src="game_scripts/print.js"></script>
 <script src="game_scripts/change-gui.js"></script>
 <script src="game_scripts/dictionaries.js"></script>
 <script src="game_scripts/cookies.js"></script>

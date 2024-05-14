@@ -167,6 +167,9 @@ var words = [
 
     getGui();
 
+    print_dictionary();
+    
+
     //alert(words);
 
     //words = getDictionary();

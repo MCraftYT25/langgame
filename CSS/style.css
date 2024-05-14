@@ -112,6 +112,7 @@ h1 {
 
 #result {
     padding: 0.5em;
+    text-align: center;
 }
 #submit {
     padding: 0.5em;
@@ -180,9 +181,23 @@ h1 {
 }
 
 
-
-
-
+#search-box {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+#search-box h2 {
+    font-family: var(--font-bold);
+}
+#dictionary-list .word-cont {
+    padding: 0.1em;
+}
+#dictionary-list .word-cont .pause {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+#dictionary-list .word-cont .translate {
+    color: grey;
+}
 
 
 /*————————————————————————————————————————||————————————————————*/
