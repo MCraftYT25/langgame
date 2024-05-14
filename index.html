@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>Document</title>
+    <title>GAME</title>
 </head>
 <body>
     <header>
@@ -26,45 +26,13 @@
                 <option value="german">German</option>
                 <option value="italian">Italian</option>
             </select>
-            <button class="button" onClick="location.reload();">Refresh</button>
-        </div>
-<!--       <div id="kategorie">
-            <select id="select" onchange="setDictionarySelect();">
-                <optgroup label="Italiano">
-                    <option value="dictionary_ita_def" hidden>Dictionary</option>
-                    <option value="dictionary_ita_def">50</option>
-                    <option value="dictionary_ita1">Kolory</option>
-                    <option value="dictionary_ita2">Zwierzęta</option>
-                    <option value="dictionary_ita3">Jedzenie</option>
-                    <option value="dictionary_ita4">Kierunki</option>
-                    <option value="dictionary_ita5">Podstawowe zwroty</option>
-                    <option value="dictionary_ita6">Czas</option>
-                    <option value="dictionary_ita8">Regularne</option>
-                    <option value="dictionary_ita9">Nieregularne</option>
-                    <option value="dictionary_ita10">Cechy charakteru</option>
-                </optgroup>
-                <optgroup label="English">
-                    <option value="dictionary_eng2">Phrasal Verbs</option>
-                    <option value="dictionary_eng4">Character Traits</option>
-                    <option value="dictionary_eng3">Synonyms</option>
-                    <option value="dictionary_eng_useful">Useful</option>
-                    <option value="dictionary_eng_matura">Matura 2024</option>
-                    <option value="dictionary_eng1">Fish4Words</option>
-                </optgroup>
-                <optgroup label="Deutsch">
-                    <option value="dictionary_de_random">Ogólne</option>
-                    <option value="dictionary_de_farben">Kolory</option>
-                    <option value="dictionary_de_charakter">Cechy charakteru</option>
-                    <option value="dictionary_de_phrases">Przydatne zwroty</option>
-                    <option value="dictionary_de_verbs">Czasowniki</option>
-                    <option value="dictionary_de_prepositions">Przyimki</option>
-                    <option value="dictionary_de_modal_verbs">Czasowniki Modalne</option>
-                    <option value="dictionary_de_prepositions"></option>
-                    <option value="dictionary_de_prepositions"></option>
-                    <option value="dictionary_de_prepositions"></option>
-                    <option value="dictionary_de_prepositions"></option>
-                </optgroup>
+            <select id="dictionary" onchange="setDictionary();">
+                <option value="d1">Dictionary</option>
+                <option value="d2">Colors</option>
             </select>
+            <button id="refresh" class="button" onClick="location.reload();">Refresh</button>
+        </div>
+<!--       
             <select id="select-count" onchange="setDictionarySelectCount();">
                 <option value="10" hidden>Count</option>
                 <option value="5">5</option>
@@ -82,7 +50,7 @@
             <p id="searched_word_text">Write</p>
             <p id="searched_word"></p>
             <div id="cont_entered_word">
-                <input id="entered_word">
+                <input type="text" id="entered_word" placeholder="" autocomplete="off" inputmode="text">
                 <button id="submit">→</button>
             </div>
             <p id="result"></p>
@@ -99,6 +67,7 @@
     </div>
 </body>
 </html>
+<script src="game_scripts/dictionaries.js"></script>
 <script src="game_scripts/cookies.js"></script>
 <script src="game_scripts/main.js"></script>
 <script src="game_scripts/symbols.js"></script>

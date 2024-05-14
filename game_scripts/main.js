@@ -1,4 +1,4 @@
-const words = [
+var words = [
     {
       word: "apple",
       translations: {
@@ -90,7 +90,11 @@ const words = [
       }
     }
   ];
-  
+  var dictionaries = {
+    d1: words,
+    d2: colors,
+  }
+
   let totalWords = 5; // liczba słów do wyświetlenia
   let wordCount = 0; // licznik słów
   let results = []; // tablica wyników
@@ -132,8 +136,36 @@ const words = [
         }
     }
 
+    /*function getDictionary()
+    {
+      if(getCookie("selected_dictionary"))
+        {
+          return getCookie("selected_dictionary");
+        } else {
+          return "words";
+        }
+      
+    }*/
+    function getDictionary()
+    {
+      if(getCookie("selected_dictionary"))
+        {
+          words = dictionaries[getCookie("selected_dictionary")];
+        } 
+    }
+
     let displayLanguage = f1();
     let inputLanguage = f2();
+
+    getDictionary();
+
+    //alert(words);
+
+    //words = getDictionary();
+
+    //words = window[getDictionary()];
+
+    //alert(window[getDictionary()]);
 
   function getRandomWord() {
     let word;

@@ -56,4 +56,10 @@ function setCookie(name, value, days) {
     setCookie("selectedGui", selectedGui, 1);
   }
 
-  
+  function setDictionary() {
+    var selectElement = document.getElementById("dictionary");
+    var selectedValue = selectElement.value;
+
+    setCookie("selected_dictionary", selectedValue, 1);
+    alert(getCookie("selected_dictionary"));
+}

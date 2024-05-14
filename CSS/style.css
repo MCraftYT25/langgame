@@ -174,5 +174,5 @@ h1 {
     padding: 0.5em;
     font-size: 1em;
     font-family: var(--font-bold);
-    
+    border-radius: 0.2em;
 }
