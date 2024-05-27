@@ -630,3 +630,387 @@ var zwroty = [
         }
     }
 ];
+
+var traits = [
+    {
+      word: "ambitious",
+      translations: {
+        english: "ambitious",
+        polish: "ambitny",
+        german: "ehrgeizig",
+        italian: "ambizioso"
+      }
+    },
+    {
+      word: "brave",
+      translations: {
+        english: "brave",
+        polish: "odważny",
+        german: "mutig",
+        italian: "coraggioso"
+      }
+    },
+    {
+      word: "compassionate",
+      translations: {
+        english: "compassionate",
+        polish: "współczujący",
+        german: "mitfühlend",
+        italian: "compassionevole"
+      }
+    },
+    {
+      word: "determined",
+      translations: {
+        english: "determined",
+        polish: "zdeterminowany",
+        german: "entschlossen",
+        italian: "determinato"
+      }
+    },
+    {
+      word: "energetic",
+      translations: {
+        english: "energetic",
+        polish: "energetyczny",
+        german: "energiegeladen",
+        italian: "energetico"
+      }
+    },
+    {
+      word: "faithful",
+      translations: {
+        english: "faithful",
+        polish: "wierny",
+        german: "treu",
+        italian: "fedele"
+      }
+    },
+    {
+      word: "generous",
+      translations: {
+        english: "generous",
+        polish: "hojny",
+        german: "großzügig",
+        italian: "generoso"
+      }
+    },
+    {
+      word: "honest",
+      translations: {
+        english: "honest",
+        polish: "uczciwy",
+        german: "ehrlich",
+        italian: "onesto"
+      }
+    },
+    {
+      word: "intelligent",
+      translations: {
+        english: "intelligent",
+        polish: "inteligentny",
+        german: "intelligent",
+        italian: "intelligente"
+      }
+    },
+    {
+      word: "joyful",
+      translations: {
+        english: "joyful",
+        polish: "radosny",
+        german: "freudig",
+        italian: "gioioso"
+      }
+    },
+    {
+      word: "kind",
+      translations: {
+        english: "kind",
+        polish: "uprzejmy",
+        german: "freundlich",
+        italian: "gentile"
+      }
+    },
+    {
+      word: "loyal",
+      translations: {
+        english: "loyal",
+        polish: "lojalny",
+        german: "loyal",
+        italian: "leale"
+      }
+    },
+    {
+      word: "modest",
+      translations: {
+        english: "modest",
+        polish: "skromny",
+        german: "bescheiden",
+        italian: "modesto"
+      }
+    },
+    {
+      word: "noble",
+      translations: {
+        english: "noble",
+        polish: "szlachetny",
+        german: "edel",
+        italian: "nobile"
+      }
+    },
+    {
+      word: "optimistic",
+      translations: {
+        english: "optimistic",
+        polish: "optymistyczny",
+        german: "optimistisch",
+        italian: "ottimista"
+      }
+    },
+    {
+      word: "patient",
+      translations: {
+        english: "patient",
+        polish: "cierpliwy",
+        german: "geduldig",
+        italian: "paziente"
+      }
+    },
+    {
+      word: "reliable",
+      translations: {
+        english: "reliable",
+        polish: "niezawodny",
+        german: "zuverlässig",
+        italian: "affidabile"
+      }
+    },
+    {
+      word: "sincere",
+      translations: {
+        english: "sincere",
+        polish: "szczery",
+        german: "aufrichtig",
+        italian: "sincero"
+      }
+    },
+    {
+      word: "trustworthy",
+      translations: {
+        english: "trustworthy",
+        polish: "godny zaufania",
+        german: "vertrauenswürdig",
+        italian: "degno di fiducia"
+      }
+    },
+    {
+      word: "understanding",
+      translations: {
+        english: "understanding",
+        polish: "wyrozumiały",
+        german: "verständnisvoll",
+        italian: "comprensivo"
+      }
+    },
+    {
+      word: "adventurous",
+      translations: {
+        english: "adventurous",
+        polish: "żądny przygód",
+        german: "abenteuerlustig",
+        italian: "avventuroso"
+      }
+    },
+    {
+      word: "bold",
+      translations: {
+        english: "bold",
+        polish: "śmiały",
+        german: "kühn",
+        italian: "audace"
+    }
+},
+    {
+      word: "creative",
+      translations: {
+        english: "creative",
+        polish: "kreatywny",
+        german: "kreativ",
+        italian: "creativo"
+      }
+    },
+    {
+      word: "diligent",
+      translations: {
+        english: "diligent",
+        polish: "pracowity",
+        german: "fleißig",
+        italian: "diligente"
+      }
+    },
+    {
+      word: "empathetic",
+      translations: {
+        english: "empathetic",
+        polish: "empatyczny",
+        german: "empathisch",
+        italian: "empatico"
+      }
+    },
+    {
+      word: "friendly",
+      translations: {
+        english: "friendly",
+        polish: "przyjazny",
+        german: "freundlich",
+        italian: "amichevole"
+      }
+    },
+    {
+      word: "gracious",
+      translations: {
+        english: "gracious",
+        polish: "łaskawy",
+        german: "gnädig",
+        italian: "cortese"
+      }
+    },
+    {
+      word: "humble",
+      translations: {
+        english: "humble",
+        polish: "pokorny",
+        german: "demütig",
+        italian: "umile"
+      }
+    },
+    {
+      word: "imaginative",
+      translations: {
+        english: "imaginative",
+        polish: "obdarzony wyobraźnią",
+        german: "phantasievoll",
+        italian: "fantasioso"
+      }
+    },
+    {
+      word: "jovial",
+      translations: {
+        english: "jovial",
+        polish: "wesoły",
+        german: "heiter",
+        italian: "gioviale"
+      }
+    },
+    {
+      word: "knowledgeable",
+      translations: {
+        english: "knowledgeable",
+        polish: "wiedzący",
+        german: "kenntnisreich",
+        italian: "conoscente"
+      }
+    },
+    {
+      word: "logical",
+      translations: {
+        english: "logical",
+        polish: "logiczny",
+        german: "logisch",
+        italian: "logico"
+      }
+    },
+    {
+      word: "motivated",
+      translations: {
+        english: "motivated",
+        polish: "zmotywowany",
+        german: "motiviert",
+        italian: "motivato"
+      }
+    },
+    {
+      word: "observant",
+      translations: {
+        english: "observant",
+        polish: "spostrzegawczy",
+        german: "aufmerksam",
+        italian: "osservante"
+      }
+    },
+    {
+      word: "passionate",
+      translations: {
+        english: "passionate",
+        polish: "namiętny",
+        german: "leidenschaftlich",
+        italian: "appassionato"
+      }
+    },
+    {
+      word: "persistent",
+      translations: {
+        english: "persistent",
+        polish: "uparty",
+        german: "hartnäckig",
+        italian: "persistente"
+      }
+    },
+    {
+      word: "resilient",
+      translations: {
+        english: "resilient",
+        polish: "odporny",
+        german: "belastbar",
+        italian: "resiliente"
+      }
+    },
+    {
+      word: "selfless",
+      translations: {
+        english: "selfless",
+        polish: "bezinteresowny",
+        german: "selbstlos",
+        italian: "altruista"
+      }
+    },
+    {
+      word: "thoughtful",
+      translations: {
+        english: "thoughtful",
+        polish: "troskliwy",
+        german: "nachdenklich",
+        italian: "premuroso"
+      }
+    },
+    {
+      word: "upbeat",
+      translations: {
+        english: "upbeat",
+        polish: "optymistyczny",
+        german: "optimistisch",
+        italian: "ottimista"
+      }
+    },
+    {
+      word: "assertive",
+      translations: {
+        english: "assertive",
+        polish: "asertywny",
+        german: "durchsetzungsfähig",
+        italian: "assertivo"
+      }
+    },
+    {
+      word: "calm",
+      translations: {
+        english: "calm",
+        polish: "spokojny",
+        german: "ruhig",
+        italian: "calmo"
+      }
+    }
+];
+    
+
+

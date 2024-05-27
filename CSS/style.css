@@ -49,6 +49,7 @@ h1 {
 #page-content {
     padding-left: 0.5em;
     padding-right: 0.5em;
+    margin-bottom: 3em;
 }
 /*————————————————————————————————————————||————————————————————*/
 #game {
@@ -96,10 +97,11 @@ h1 {
     border-bottom-right-radius: 0.2em;
     font-family: var(--font-bold);
     display: flex;
+    justify-content: center;
 }
 #submit img {
     width: auto;
-    height: 3em;
+    height: 2.5em;
 }
 /*————————————————————————————————————————|symbols|————————————————————*/
 .symbols {
@@ -179,6 +181,9 @@ h1 {
 #dictionary-list .word-cont .translate {
     color: grey;
 }
+#dictionary-list::selection {
+    background-color: var(--interface-text-color);
+}
 /*————————————————————————————————————————||————————————————————*/
 #searchelement {
     padding: 0.5em;
@@ -189,6 +194,8 @@ h1 {
 }
 #searchelement:focus {
     border: none;
+    outline: none;
+    border-bottom: solid 1px black;
 }
 /*————————————————————————————————————————||————————————————————*/
 footer {
