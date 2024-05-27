@@ -1,3 +1,96 @@
+var words = [
+    {
+      word: "apple",
+      translations: {
+        english: "apple",
+        polish: "jabłko",
+        german: "Apfel",
+        italian: "mela"
+      }
+    },
+    {
+      word: "book",
+      translations: {
+        english: "book",
+        polish: "książka",
+        german: "Buch",
+        italian: "libro"
+      }
+    },
+    {
+      word: "car",
+      translations: {
+        english: "car",
+        polish: "samochód",
+        german: "Auto",
+        italian: "auto"
+      }
+    },
+    {
+      word: "dog",
+      translations: {
+        english: "dog",
+        polish: "pies",
+        german: "Hund",
+        italian: "cane"
+      }
+    },
+    {
+      word: "elephant",
+      translations: {
+        english: "elephant",
+        polish: "słoń",
+        german: "Elefant",
+        italian: "elefante"
+      }
+    },
+    {
+      word: "flower",
+      translations: {
+        english: "flower",
+        polish: "kwiat",
+        german: "Blume",
+        italian: "fiore"
+      }
+    },
+    {
+      word: "guitar",
+      translations: {
+        english: "guitar",
+        polish: "gitara",
+        german: "Gitarre",
+        italian: "chitarra"
+      }
+    },
+    {
+      word: "house",
+      translations: {
+        english: "house",
+        polish: "dom",
+        german: "Haus",
+        italian: "casa"
+      }
+    },
+    {
+      word: "island",
+      translations: {
+        english: "island",
+        polish: "wyspa",
+        german: "Insel",
+        italian: "isola"
+      }
+    },
+    {
+      word: "jacket",
+      translations: {
+        english: "jacket",
+        polish: "kurtka",
+        german: "Jacke",
+        italian: "giacca"
+      }
+    }
+  ];
+
 var colors = [
     {
         color: "red",
@@ -219,42 +312,6 @@ var time = [
         }
     },
     {
-        word: "morning",
-        translations: {
-            english: "morning",
-            polish: "rano",
-            german: "Morgen",
-            italian: "mattina"
-        }
-    },
-    {
-        word: "afternoon",
-        translations: {
-            english: "afternoon",
-            polish: "popołudnie",
-            german: "Nachmittag",
-            italian: "pomeriggio"
-        }
-    },
-    {
-        word: "evening",
-        translations: {
-            english: "evening",
-            polish: "wieczór",
-            german: "Abend",
-            italian: "sera"
-        }
-    },
-    {
-        word: "night",
-        translations: {
-            english: "night",
-            polish: "noc",
-            german: "Nacht",
-            italian: "notte"
-        }
-    },
-    {
         word: "Monday",
         translations: {
             english: "Monday",
@@ -423,6 +480,153 @@ var time = [
             polish: "grudzień",
             german: "Dezember",
             italian: "dicembre"
+        }
+    },
+    {
+        word: "spring",
+        translations: {
+            english: "spring",
+            polish: "wiosna",
+            german: "Frühling",
+            italian: "primavera"
+        }
+    },
+    {
+        word: "summer",
+        translations: {
+            english: "summer",
+            polish: "lato",
+            german: "Sommer",
+            italian: "estate"
+        }
+    },
+    {
+        word: "autumn",
+        translations: {
+            english: "autumn",
+            polish: "jesień",
+            german: "Herbst",
+            italian: "autunno"
+        }
+    },
+    {
+        word: "winter",
+        translations: {
+            english: "winter",
+            polish: "zima",
+            german: "Winter",
+            italian: "inverno"
+        }
+    },
+    {
+        word: "morning",
+        translations: {
+            english: "morning",
+            polish: "rano",
+            german: "Morgen",
+            italian: "mattina"
+        }
+    },
+    {
+        word: "noon",
+        translations: {
+            english: "noon",
+            polish: "południe",
+            german: "Mittag",
+            italian: "mezzogiorno"
+        }
+    },
+    {
+        word: "afternoon",
+        translations: {
+            english: "afternoon",
+            polish: "popołudnie",
+            german: "Nachmittag",
+            italian: "pomeriggio"
+        }
+    },
+    {
+        word: "evening",
+        translations: {
+            english: "evening",
+            polish: "wieczór",
+            german: "Abend",
+            italian: "sera"
+        }
+    },
+    {
+        word: "night",
+        translations: {
+            english: "night",
+            polish: "noc",
+            german: "Nacht",
+            italian: "notte"
+        }
+    },
+];
+
+var zwroty = [
+    {
+        word: "please",
+        translations: {
+            english: "please",
+            polish: "proszę",
+            german: "bitte",
+            italian: "per favore"
+        }
+    },
+    {
+        word: "thank you",
+        translations: {
+            english: "thank you",
+            polish: "dziękuję",
+            german: "danke",
+            italian: "grazie"
+        }
+    },
+    {
+        word: "excuse me",
+        translations: {
+            english: "excuse me",
+            polish: "przepraszam",
+            german: "Entschuldigung",
+            italian: "mi scusi"
+        }
+    },
+    {
+        word: "how are you?",
+        translations: {
+            english: "how are you?",
+            polish: "jak się masz?",
+            german: "wie geht es Ihnen?",
+            italian: "come stai?"
+        }
+    },
+    {
+        word: "what's your name?",
+        translations: {
+            english: "what's your name?",
+            polish: "jak się nazywasz?",
+            german: "wie heißt du?",
+            italian: "come ti chiami?"
+        }
+    },
+    {
+        word: "where are you from?",
+        translations: {
+            english: "where are you from?",
+            polish: "skąd jesteś?",
+            german: "Woher kommst du?",
+            italian: "di dove sei?"
+        }
+    },
+    {
+        word: "how are you doing?",
+        translations: {
+            english: "how are you doing?",
+            polish: "co u Ciebie słychać?",
+            german: "wie geht es Ihnen?",
+            italian: "come va?"
         }
     }
 ];

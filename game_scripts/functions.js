@@ -1,3 +1,9 @@
+let version = "1.7";
+let date = "27.05.24";
+
+document.getElementById("version").innerHTML = "V" + version + "." + date;
+document.getElementById("vr").innerHTML = "latest game version " + "V" + version + "." + date;
+
 function move(value) {
     switch (value) {
         case 1:
